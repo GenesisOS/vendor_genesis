@@ -205,6 +205,9 @@ CUSTOM_LOCALES += \
     cy_GB \
     fur_IT
 
+# Fonts
+include vendor/genesis/config/fonts.mk
+
 # Google apps and services
 $(call inherit-product, vendor/gms/products/gms.mk)
 
