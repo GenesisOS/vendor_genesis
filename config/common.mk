@@ -194,6 +194,9 @@ CUSTOM_LOCALES += \
 # Bootanimation
 $(call inherit-product, vendor/genesis/config/bootanimation.mk)
 
+# Fonts
+include vendor/genesis/config/fonts.mk
+
 # Google apps and services
 $(call inherit-product, vendor/gms/products/gms.mk)
 
