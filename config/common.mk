@@ -189,6 +189,10 @@ SKIP_BOOT_JARS_CHECK := true
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
     ro.storage_manager.enabled=true
 
+# Themes
+PRODUCT_PACKAGES += \
+    BlackTheme
+
 # These packages are excluded from user builds
 PRODUCT_PACKAGES_DEBUG += \
     procmem
