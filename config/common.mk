@@ -77,6 +77,14 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+ifeq ($(USE_PIXEL_CHARGER),true)
+# Charger
+PRODUCT_PACKAGES += \
+    charger_res_images \
+    product_charger_res_images \
+    product_charger_res_images_vendor
+endif
+
 ifeq ($(GENESIS_OFFICIAL), true)
 # Genesis packages
 PRODUCT_PACKAGES += \
