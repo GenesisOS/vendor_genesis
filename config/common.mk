@@ -97,6 +97,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PACKAGES += \
     SimpleDeviceConfig
 
+# Disable RescueParty due to high risk of data loss
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.sys.disable_rescue=true
+
 # Extra tools in Genesis
 PRODUCT_PACKAGES += \
     bash \
