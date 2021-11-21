@@ -152,6 +152,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/genesis/prebuilt/common/etc/init/init.openssh.rc:$(TARGET_COPY_OUT_PRODUCT)/etc/init/init.openssh.rc
 
+# Overlay
+PRODUCT_PRODUCT_PROPERTIES += \
+    ro.boot.vendor.overlay.theme=com.google.android.systemui.gxoverlay_gms
+
 # rsync
 PRODUCT_PACKAGES += \
     rsync
