@@ -180,7 +180,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
 # Permissions
 PRODUCT_COPY_FILES += \
     vendor/genesis/config/permissions/org.lineageos.health.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.health.xml \
-    vendor/genesis/config/permissions/org.lineageos.livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.livedisplay.xml
+    vendor/genesis/config/permissions/org.lineageos.livedisplay.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/org.lineageos.livedisplay.xml \
+    vendor/genesis/config/permissions/privapp-permissions-settings.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/privapp-permissions-settings.xml
 
 # rsync
 PRODUCT_PACKAGES += \
