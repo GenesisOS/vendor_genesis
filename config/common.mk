@@ -177,6 +177,10 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PRODUCT_PROPERTIES += \
     ro.boot.vendor.overlay.theme=com.google.android.systemui.gxoverlay_gms
 
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/genesis/config/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
+
 # rsync
 PRODUCT_PACKAGES += \
     rsync
