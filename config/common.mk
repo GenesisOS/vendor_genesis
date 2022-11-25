@@ -77,6 +77,10 @@ PRODUCT_MINIMIZE_JAVA_DEBUG_INFO := true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 ifeq ($(USE_PIXEL_CHARGER),true)
 # Charger
 PRODUCT_PACKAGES += \
