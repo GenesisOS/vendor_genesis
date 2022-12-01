@@ -104,6 +104,14 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_COPY_FILES += \
     vendor/genesis/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 
+# Call Recording
+TARGET_CALL_RECORDING_SUPPORTED ?= true
+
+ifneq ($(TARGET_CALL_RECORDING_SUPPORTED),false)
+PRODUCT_COPY_FILES += \
+    vendor/genesis/config/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/permissions/com.google.android.apps.dialer.call_recording_audio.features.xml
+endif
+
 # Charger
 PRODUCT_PACKAGES += \
     custom_charger_animation \
