@@ -93,10 +93,6 @@ endif
 PRODUCT_COPY_FILES += \
     vendor/genesis/prebuilt/common/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 
-# Config
-PRODUCT_PACKAGES += \
-    SimpleDeviceConfig
-
 # Disable RescueParty due to high risk of data loss
 PRODUCT_PRODUCT_PROPERTIES += \
     persist.sys.disable_rescue=true
