@@ -56,6 +56,10 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 endif
 endif
 
+# BtHelper
+PRODUCT_PACKAGES += \
+    BtHelper
+
 # Genesis-specific init rc file
 PRODUCT_COPY_FILES += \
     vendor/genesis/prebuilt/common/etc/init/init.genesis-system_ext.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/init.genesis-system_ext.rc
