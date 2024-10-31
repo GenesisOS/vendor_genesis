@@ -4,3 +4,10 @@ prebuilt_etc_xml {
     src: "etc/apns-conf.xml",
     schema: ":apns-conf-schema",
 }
+
+prebuilt_etc_xml {
+    name: "genesis-component-overrides.xml",
+    product_specific: true,
+    src: "etc/genesis-component-overrides.xml",
+    sub_dir: "sysconfig",
+}

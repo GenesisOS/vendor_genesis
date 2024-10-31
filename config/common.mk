@@ -94,6 +94,10 @@ PRODUCT_PACKAGES += \
     product_charger_res_images \
     product_charger_res_images_vendor
 
+# Component overrides
+PRODUCT_PACKAGES += \
+    genesis-component-overrides.xml
+
 ifeq ($(GENESIS_OFFICIAL), true)
 # Genesis packages
 PRODUCT_PACKAGES += \
