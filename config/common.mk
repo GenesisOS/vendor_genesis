@@ -241,6 +241,7 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/genesis/overlay/no-rro
 
 PRODUCT_PACKAGES += \
+    AndroidBlackThemeOverlay \
     DocumentsUIOverlay \
     NetworkStackOverlay \
     PermissionControllerOverlay

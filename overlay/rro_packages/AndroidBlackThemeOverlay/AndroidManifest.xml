@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     SPDX-FileCopyrightText: The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+        package="org.genesisos.overlay.customization.blacktheme"
+        android:versionCode="1"
+        android:versionName="1.0">
+    <overlay android:targetPackage="android"
+        android:category="android.theme.customization.system_palette"
+        android:priority="1"/>
+    <application
+        android:label="@string/android_overlay_black"
+        android:hasCode="false"/>
+</manifest>
