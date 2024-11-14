@@ -1,6 +1,9 @@
 # Allow vendor/extra to override any property by setting it first
 $(call inherit-product-if-exists, vendor/extra/product.mk)
 
+# Certification
+$(call inherit-product-if-exists, vendor/certification/config.mk)
+
 PRODUCT_BRAND ?= GenesisOS
 
 ifeq ($(PRODUCT_GMS_CLIENTID_BASE),)
