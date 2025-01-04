@@ -78,6 +78,12 @@
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.Receiver</item>
         <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.SecretCodeReceiver</item>
         <item>com.google.android.setupwizard/com.google.android.setupwizard.update.OtaUpdateActivity</item>
+        <item>com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryAppWidgetProvider</item>
+        <item>com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryWidgetPromoActivity</item>
+        <item>com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.AutoTranslateSettingPortalActivity</item>
+        <item>com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.AutoTranslateSetupLanguageActivity</item>
+        <item>com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.SettingsSummaryContentProvider</item>
+        <item>com.google.android.as/com.google.android.apps.miphone.aiai.translate.setupui.TranslateSetupActivity</item>
     </string-array>
 
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and
