@@ -4,3 +4,9 @@ prebuilt_etc_xml {
     src: "etc/apns-conf.xml",
     schema: ":apns-conf-schema",
 }
+
+java_import {
+    name: "vendor.aac.hardware.richtap.vibrator",
+    jars: ["lib/vendorAacHardwareRichtapVibrator.jar"],
+    sdk_version: "current",
+}
