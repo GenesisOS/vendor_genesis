@@ -31,24 +31,26 @@ SOONG_CONFIG_genesisGlobalVars += \
     additional_gralloc_10_usage_bits \
     camera_needs_client_info_lib \
     camera_needs_client_info_lib_oplus \
-    camera_override_format_from_reserved \
     target_camera_package_name \
     target_libcameraservice_ext_lib
 
 # Soong bool variables
 SOONG_CONFIG_genesisGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 SOONG_CONFIG_genesisGlobalVars_camera_needs_client_info_lib_oplus := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB_OPLUS)
-SOONG_CONFIG_genesisGlobalVars_camera_override_format_from_reserved := $(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED)
 
 # Set default values
 TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS ?= 0
-TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED ?= false
 TARGET_CAMERA_SERVICE_EXT_LIB ?= libcameraservice_ext_lib
 
 # Soong value variables
 SOONG_CONFIG_genesisGlobalVars_additional_gralloc_10_usage_bits := $(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS)
 SOONG_CONFIG_genesisGlobalVars_target_camera_package_name := $(TARGET_CAMERA_PACKAGE_NAME)
 SOONG_CONFIG_genesisGlobalVars_target_libcameraservice_ext_lib := $(TARGET_CAMERA_SERVICE_EXT_LIB)
+
+# Camera
+ifneq ($(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED),)
+    $(call soong_config_set,camera,override_format_from_reserved,$(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED))
+endif
 
 # Lineage Health HAL
 ifneq ($(TARGET_HEALTH_CHARGING_CONTROL_CHARGING_PATH),)
