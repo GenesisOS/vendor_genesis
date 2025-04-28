@@ -118,20 +118,3 @@ camera_needs_client_info_lib_oplus {
         },
     },
 }
-
-soong_config_module_type {
-    name: "target_camera_package_name",
-    module_type: "cc_defaults",
-    config_namespace: "genesisGlobalVars",
-    value_variables: ["target_camera_package_name"],
-    properties: ["cppflags"],
-}
-
-target_camera_package_name {
-    name: "camera_package_name_defaults",
-    soong_config_variables: {
-        target_camera_package_name: {
-            cppflags: ["-DCAMERA_PACKAGE_NAME=\"%s\""],
-        },
-    },
-}
