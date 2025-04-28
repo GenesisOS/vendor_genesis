@@ -30,23 +30,21 @@ SOONG_CONFIG_NAMESPACES += genesisGlobalVars
 SOONG_CONFIG_genesisGlobalVars += \
     camera_needs_client_info_lib \
     camera_needs_client_info_lib_oplus \
-    target_camera_package_name \
-    target_libcameraservice_ext_lib
+    target_camera_package_name
 
 # Soong bool variables
 SOONG_CONFIG_genesisGlobalVars_camera_needs_client_info_lib := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB)
 SOONG_CONFIG_genesisGlobalVars_camera_needs_client_info_lib_oplus := $(TARGET_CAMERA_NEEDS_CLIENT_INFO_LIB_OPLUS)
 
-# Set default values
-TARGET_CAMERA_SERVICE_EXT_LIB ?= libcameraservice_ext_lib
-
 # Soong value variables
 SOONG_CONFIG_genesisGlobalVars_target_camera_package_name := $(TARGET_CAMERA_PACKAGE_NAME)
-SOONG_CONFIG_genesisGlobalVars_target_libcameraservice_ext_lib := $(TARGET_CAMERA_SERVICE_EXT_LIB)
 
 # Camera
 ifneq ($(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED),)
     $(call soong_config_set,camera,override_format_from_reserved,$(TARGET_CAMERA_OVERRIDE_FORMAT_FROM_RESERVED))
+endif
+ifneq ($(TARGET_CAMERA_SERVICE_EXT_LIB),)
+    $(call soong_config_set,libcameraservice,ext_lib,$(TARGET_CAMERA_SERVICE_EXT_LIB))
 endif
 
 # Libui
