@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2024 GenesisOS
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.genesisos.settings.overlay.pixel">
+
+    <application android:hasCode="false"/>
+
+    <overlay
+        android:isStatic="true"
+        android:priority="600"
+        android:targetPackage="com.android.settings" />
+</manifest>

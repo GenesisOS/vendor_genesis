@@ -1,0 +1,7 @@
+//
+// Copyright (C) 2024 GenesisOS
+//
+runtime_resource_overlay {
+    name: "SettingsOverlayPixel",
+    product_specific: true,
+}

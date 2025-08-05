@@ -256,4 +256,7 @@ CUSTOM_LOCALES += \
 
 include vendor/genesis/config/version.mk
 
+# GMS
+include vendor/genesis/config/pixel.mk
+
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
