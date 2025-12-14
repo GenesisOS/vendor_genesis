@@ -104,6 +104,11 @@ PRODUCT_RESTRICT_VENDOR_FILES := false
 PRODUCT_COPY_FILES += \
     vendor/genesis/bootanimation/bootanimation.zip:$(TARGET_COPY_OUT_PRODUCT)/media/bootanimation.zip
 
+# Charger
+PRODUCT_PACKAGES += \
+    custom_charger_animation \
+    custom_charger_animation_vendor
+
 # Lineage interfaces
 PRODUCT_PACKAGES += \
     framework_compatibility_matrix.lineage.xml
