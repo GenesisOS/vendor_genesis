@@ -144,6 +144,9 @@ PRODUCT_ARTIFACT_PATH_REQUIREMENT_ALLOWED_LIST += \
     system/bin/setcap \
     system/%/libzstd.so
 
+# Enable Material Design 3 Expressive
+PRODUCT_PRODUCT_PROPERTIES += is_expressive_design_enabled=true
+
 # Filesystems tools
 PRODUCT_PACKAGES += \
     fsck.ntfs \
