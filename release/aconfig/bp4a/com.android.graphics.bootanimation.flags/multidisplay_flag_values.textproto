@@ -1,6 +1,0 @@
-flag_value {
-  package: "com.android.graphics.bootanimation.flags"
-  name: "multidisplay"
-  state: ENABLED
-  permission: READ_ONLY
-}

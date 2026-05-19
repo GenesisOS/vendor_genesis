@@ -1,7 +1,7 @@
-# Inherit mobile mini common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile_mini.mk)
+# Inherit mobile mini common Genesis stuff
+$(call inherit-product, vendor/genesis/config/common_mobile_mini.mk)
 
-# Inherit tablet common Lineage stuff
-$(call inherit-product, vendor/lineage/config/tablet.mk)
+# Inherit tablet common Genesis stuff
+$(call inherit-product, vendor/genesis/config/tablet.mk)
 
-$(call inherit-product, vendor/lineage/config/wifionly.mk)
+$(call inherit-product, vendor/genesis/config/wifionly.mk)

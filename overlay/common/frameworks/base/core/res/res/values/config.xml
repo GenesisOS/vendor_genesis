@@ -53,6 +53,57 @@
         <item>com.mediatek.ims</item>
     </string-array>
 
+    <!-- The list of components which should be automatically disabled for all devices. -->
+    <string-array name="config_globallyDisabledComponents" translatable="false">
+        <item>com.google.android.gms/com.google.android.gms.stats.service.DropBoxEntryAddedReceiver</item>
+	   <item>com.google.android.gms/com.google.android.gms.chimera.GmsIntentOperationService$GmsExternalReceiver</item>
+	   <item>com.google.android.gms/com.google.android.gms.update.control.NotificationControl</item>
+
+        <!-- Google OTA -->
+        <item>com.google.android.gms/com.google.android.gms.update.OtaSuggestionActivity</item>
+        <item>com.google.android.gms/com.google.android.gms.update.OtaSuggestionSummaryProvider</item>
+        <item>com.google.android.gms/com.google.android.gms.update.phone.PopupDialog</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateActivity</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateGcmTaskService</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdatePersistentListenerService</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.ActiveReceiver</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.Receiver</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService.SecretCodeReceiver</item>
+        <item>com.google.android.gms/com.google.android.gms.update.SystemUpdateService</item>
+        <item>com.google.android.setupwizard/com.google.android.setupwizard.update.OtaUpdateActivity</item>
+
+	   <!-- Now playing -->
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSettingsActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicSetupWizardActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.AmbientMusicNotificationsSettingsActivity</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryContentProvider</item>
+        <item>com.google.android.as/com.google.intelligence.sense.ambientmusic.history.HistoryActivity</item>
+
+	   <!-- Battery widget -->
+        <item>com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryAppWidgetProvider</item>
+        <item>com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.batterywidget.impl.BatteryWidgetPromoActivity</item>
+
+	   <!-- Live translate -->
+        <item>com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.AutoTranslateSetupLanguageActivity</item>
+        <item>com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.SettingsSummaryContentProvider</item>
+        <item>com.google.android.as/com.google.android.apps.miphone.aiai.translate.setupui.TranslateSetupActivity</item>
+        <item>com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.AutoTranslateSettingPreferenceActivity</item>
+        <item>com.google.android.as/com.google.android.apps.miphone.aiai.translate.settings.settingsui.AutoTranslateSettingPortalActivity</item>
+
+	   <!-- GPSU -->
+        <item>com.android.vending/com.google.android.finsky.systemupdate.SystemUpdateSettingsContentProvider</item>
+        <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SettingsSecurityEntryPoint</item>
+        <item>com.android.vending/com.google.android.finsky.systemupdateactivity.SystemUpdateActivity</item>
+
+        <!-- Battery Health -->
+        <item>com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.battery.impl.health.BHSettingsProvider</item>
+        <item>com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.battery.impl.health.BHSettingsActivity</item>
+        <item>com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationActivityInject</item>
+        <item>com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationSearchIndexablesProvider</item>
+        <item>com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationActivity</item>
+        <item>com.google.android.settings.intelligence/com.google.android.settings.intelligence.modules.battery.impl.chargingoptimization.ChargingOptimizationBootBroadcastReceiver</item>
+    </string-array>
+
     <!-- Set this to true to enable the platform's auto-power-save modes like doze and
          app standby.  These are not enabled by default because they require a standard
          cloud-to-device messaging service for apps to interact correctly with the modes
@@ -84,7 +135,7 @@
     <bool name="config_useRoundIcon">true</bool>
 
     <!-- Whether or not we should show the option to show battery percentage -->
-    <bool name="config_battery_percentage_setting_available">false</bool>
+    <bool name="config_battery_percentage_setting_available">true</bool>
 
     <!-- Whether desktop mode is supported on the current device  -->
     <bool name="config_isDesktopModeSupported">true</bool>
@@ -113,9 +164,6 @@
         <item>cx.ring</item>
         <item>org.briarproject.briar.android</item>
     </string-array>
-
-    <!-- Flag indicating which package name can access DeviceConfig table -->
-    <string name="config_deviceConfiguratorPackageName" translatable="false">org.protonaosp.deviceconfig</string>
 
     <!-- Wallpaper cropper package. Used as the default cropper if the active launcher doesn't
          handle wallpaper cropping.
